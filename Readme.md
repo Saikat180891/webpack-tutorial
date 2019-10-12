@@ -1,8 +1,9 @@
 # Webpack Tutorial #
 
-> this is a tutorial on webpack
+## Different Types of Module Systems
 
-```
-this is the code
-
-```
+| Module System |           Common System |
+|:-------------:|------------------------:|
+|   Common JS   | module.exports, require |
+|      AMD      |         define, require |
+|    ES 2015    |          export, import |
