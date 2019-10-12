@@ -2,8 +2,8 @@
 
 ## Different Types of Module Systems
 
-| Module System |           Common System |
-|:-------------:|------------------------:|
-|   Common JS   | module.exports, require |
-|      AMD      |         define, require |
-|    ES 2015    |          export, import |
+|             Module System            |           Common System | Usage                                                         |
+|:------------------------------------:|------------------------:|---------------------------------------------------------------|
+|               Common JS              | module.exports, require | Mostly used outside browser i.e. NodeJS                       |
+| AMD (Asynchronous Module Definition) |         define, require |                                                               |
+|                ES 2015               |          export, import | Mostly browser side application, also can be used with NodeJS |
