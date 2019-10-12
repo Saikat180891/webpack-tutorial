@@ -12,4 +12,9 @@
 
 > Create a file called `index.js` and another file called `print.js`
 
-[print.js]()
+[print.js](https://github.com/Saikat180891/webpack-tutorial/blob/master/src/print.js)
+
+```
+const print = (...args) => console.log(...args)
+module.exports = print;
+```
