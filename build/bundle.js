@@ -63,23 +63,72 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-const print = (...args) => console.log(...args)
+"use strict";
+
+
+var print = function print() {
+  var _console;
+
+  return (_console = console).log.apply(_console, arguments);
+};
 module.exports = print;
 
 /***/ },
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-const print = __webpack_require__(0);
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var printES2015 = exports.printES2015 = function printES2015() {
+  var _console;
+
+  return (_console = console).log.apply(_console, arguments);
+};
+
+/***/ },
+/* 2 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+__webpack_require__(3);
+
+var root = document.querySelector("#root");
+root.innerHTML = "This is the random file";
+
+/***/ },
+/* 3 */
+/***/ function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ },
+/* 4 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var _printES = __webpack_require__(1);
+
+__webpack_require__(2);
+
+var print = __webpack_require__(0);
 
 print(1, 1, 1, "Hello World");
+(0, _printES.printES2015)(1, 1, 1, "Hello World", "ES2015");
 
 /***/ }
 /******/ ]);
